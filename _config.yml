@@ -1,2 +1,10 @@
 
 title: Unitarians in Thailand
+
+languages: ["en", "th"]
+default_lang: "en"
+exclude_from_localization: ["js", "images", "img", "css", "fonts"]
+parallel_localization: true
+
+plugins:
+  - jekyll-polyglot
