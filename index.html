@@ -78,10 +78,10 @@ lang: 'en'
       <h4>Get Involved</h4>
       <p>Anyone can be a Unitarian, regardless of their beliefs and religions. There are many ways to get involved with other Unitarians in Thailand.</p>
       <div class="button-main bg-fio-point">read more</div>
-      <div class="like-wrap">
+      <!-- <div class="like-wrap">
         <a href="#"><i class="fa fa-heart col-red"></i></a><span>224</span>
         <a href="#"><i class="fa fa-comment col-green"></i></a><span>89</span>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
@@ -92,28 +92,21 @@ lang: 'en'
 </div>
 
 <div class="col-md-7 col-lg-7 col-md-offset-1 col-lg-offset-1">
+  {% for post in site.posts limit:2 %}
   <div class="blog-event">
     <div class="featured-img">
-      <img src="images/clients/1.jpg" width="150" alt="">
+      <img src="{{post.feature_image}}" width="150" alt="">
     </div>
     <div class="featured-blog">
-        <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
-        <p> From talks to charity drives to community service, this is where you can find out what’s going on, and sign up!</p>
+      <h3>{{post.title}}</h3>
+      <p>{{post.exceprt}}</p>
+      <a href="{{ post.url }}">
         <button class="button-info">Read More</button>
-        <button class="button-info">Register Now</button>
+      </a>
     </div>
   </div>
-  <div class="blog-event">
-    <div class="featured-img">
-      <img src="images/clients/1.jpg" width="150" alt="">
-    </div>
-    <div class="featured-blog">
-        <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
-        <p> From talks to charity drives to community service, this is where you can find out what’s going on, and sign up!</p>
-        <button class="button-info">Read More</button>
-        <button class="button-info">Register Now</button>
-    </div>
-  </div>
+
+  {% endfor %}
 </div>
 
 <!-- subscribe -->
@@ -121,14 +114,14 @@ lang: 'en'
   <div class="subscribe">
     <h4>Subscribe to Newsletter</h4>
       <div class="email-field">
-          <form action="http://demo.nrgthemes.com/">
-                 <div class="email-input">
-                    <input type="email" placeholder="Enter your email..." required>
-                    <i class="fa fa-check col-green"></i>
-                 </div>
-            <button type="submit" class="button-main bg-green">Submit</button>
-          </form>
-            <span>We never spam :)</span>
+        <form action="">
+           <div class="email-input">
+             <input type="email" placeholder="Enter your email..." required>
+             <i class="fa fa-check col-green"></i>
+           </div>
+           <button type="submit" class="button-main bg-green">Submit</button>
+        </form>
+        <span></span>
       </div>
     </div>
 </div>
