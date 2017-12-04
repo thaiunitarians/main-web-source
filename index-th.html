@@ -5,10 +5,123 @@ permalink: 'index.html'
 lang: 'th'
 ---
 
-<div class="container header-start text-center">
+{% include carousel-th.html %}
+
+<!-- Main text -->
+<div class="col-sm-12 col-xs-12 col-md-12">
+  <div class="container header-start text-center">
     <div class="heading-icon">
-      <i class="fa fa-3x fa-heart"></i>
+      <i class="fa fa-3x fa-fire"></i>
     </div>
-  <h1 class="main-text">Show your Love for the Humanity</h1>
-  <p class="text-center sub-text"><em class="first-line">Lorem ipsum dolor sit amet, consectetur adipisiciSng elit, sed do eiusmod tempor </em><em class="next-line"> incididunt ut labore et dolore magna aliqua.A sed do eiusmod tempor incididunt ut labore et dolore magna.</em></p>
+    <h1 class="main-text">เสรีภาพ &middot; เหตุผล &middot; การยอมรับ</h1>
+    <p class="text-center sub-text">
+      <em class="first-line">ยูนิทาเรี่ยนเป็นศาสนาอันเปิดกว้างที่สนับสนุนเสรีภาพทางศาสนาและการตามหาสัจธรรมของแต่ละบุคคล</em>
+      <em class="next-line">เราเชื่อว่าทุกคนมีสิทธิ์ที่จะค้นหาความเชื่อของตนผ่านทางเหตุและผลของตนเอง ตราบที่ยังเคารพความเชื่อของบุคคลอื่น</em>
+    </p>
+  </div>
+</div>
+
+<!-- Featured articles-->
+<div class="item col-md-4">
+  <div class="blok-read-sm">
+    <a href="single1.html" class="hover-image">
+      <img src="{{ site.baseurl }}/img/cover1.jpg" alt="image">
+      <span class="layer-block"></span>
+    </a>
+    <div class="editor-choice">
+      <i class="fa fa-star"></i>
+      <a href="#">Editor’s Choice</a>
+    </div>
+    <div class="content-block">
+      <span class="point-caption bg-blue-point"></span>
+      <span class="bottom-line bg-blue-point"></span>
+      <h4>ยูนิทาเรี่ยนคืออะไร?</h4>
+      <p>ยูนิทาเรียนเป็นหนึ่งในศาสนาที่ไม่มีการผูกมัดที่เก่าแก่ที่สุดในโลกโดยมีสมาชิกหลายแสนคนทั่วโลก</p>
+      <div class="button-main bg-fio-point">อ่านต่อ</div>
+    </div>
+  </div>
+</div>
+
+<div class="item col-md-4">
+  <div class="blok-read-sm">
+    <a href="single1.html" class="hover-image">
+      <img src="{{ site.baseurl }}/img/cover2.jpg" alt="image">
+      <span class="layer-block"></span>
+    </a>
+    <!-- <div class="editor-choice">
+      <i class="fa fa-star"></i>
+      <a href="#">Editor’s Choice</a>
+    </div> -->
+    <div class="content-block">
+      <span class="point-caption bg-blue-point"></span>
+      <span class="bottom-line bg-blue-point"></span>
+      <h4>ประวัติของยูนิทาเรี่ยน</h4>
+      <p>ยูนิทาเรี่ยนเดิบโตขึ้นมาในหลากหลายประเทศพร้อมกันโดยไม่ได้นับหมายตลอดช่วงระยะเวลากว่า 400 ปี</p>
+      <div class="button-main bg-fio-point">อ่านต่อ</div>
+    </div>
+  </div>
+</div>
+
+<div class="item col-md-4">
+  <div class="blok-read-sm">
+    <a href="single1.html" class="hover-image">
+      <img src="{{ site.baseurl }}/img/cover3.jpg" alt="image">
+      <span class="layer-block"></span>
+    </a>
+    <!-- <div class="editor-choice">
+      <i class="fa fa-star"></i>
+      <a href="#">Editor’s Choice</a>
+    </div> -->
+    <div class="content-block">
+      <span class="point-caption bg-blue-point"></span>
+      <span class="bottom-line bg-blue-point"></span>
+      <h4>การมีส่วนร่วม</h4>
+      <p>ทุกคนสามารถเข้ามาเป็นส่วนหนึ่งของชาวยูนิทาเรี่ยนได้โดยไม่มีข้อจำกัดด้านความเชื่อและศาสนา มีหลายหลายช่องทางที่คุณสามารถเข้ามามีส่วนร่วมกับชาวยูนิทาเรี่ยนในประเทศไทยได้</p>
+      <div class="button-main bg-fio-point">อ่านต่อ</div>
+      <!-- <div class="like-wrap">
+        <a href="#"><i class="fa fa-heart col-red"></i></a><span>224</span>
+        <a href="#"><i class="fa fa-comment col-green"></i></a><span>89</span>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- Blogs -->
+<div class="divider col-sm-12 col-xs-12 col-md-12">
+  <div class="header-text">News</div>
+</div>
+
+<div class="col-md-7 col-lg-7 col-md-offset-1 col-lg-offset-1">
+  {% for post in site.posts limit:2 %}
+  <div class="blog-event">
+    <div class="featured-img">
+      <img src="{{post.feature_image}}" width="150" alt="">
+    </div>
+    <div class="featured-blog">
+      <h3>{{post.title}}</h3>
+      <p>{{post.exceprt}}</p>
+      <a href="{{ post.url }}">
+        <button class="button-info">Read More</button>
+      </a>
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
+
+<!-- subscribe -->
+<div class="col-md-4 col-lg-4 subscribe-form">
+  <div class="subscribe">
+    <h4>Subscribe to Newsletter</h4>
+      <div class="email-field">
+        <form action="">
+           <div class="email-input">
+             <input type="email" placeholder="Enter your email..." required>
+             <i class="fa fa-check col-green"></i>
+           </div>
+           <button type="submit" class="button-main bg-green">Submit</button>
+        </form>
+        <span></span>
+      </div>
+    </div>
 </div>
