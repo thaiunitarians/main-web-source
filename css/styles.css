@@ -6,6 +6,10 @@ Author:Themewagon
 Author URI:http:themewagon.com/
 */
 
+body{
+	background: rgba(255,255,255,1);
+}
+
 .logo{
 	position: relative;
 	top:-120px;
@@ -17,4 +21,8 @@ Author URI:http:themewagon.com/
 
 .carousel-control{
 	top: 50%;
+}
+
+.white p{
+	color: white;
 }
