@@ -1,7 +1,7 @@
 <div class="header container">
   <div class="visible-xs visible-sm col-xs-12 col-sm-12 text-center sm-logo">
-    <a rel="home" href="index.html">
-      <img src="{{ site.baseurl }}/img/logo.png" width="200" alt="logo">
+    <a rel="home" href="{{site.url}}/index.html">
+      <img src="{{ site.url }}/img/logo.png" width="200" alt="logo">
     </a>
   </div>
 </div>
@@ -16,18 +16,21 @@
   </div>
   <div class="collapse navbar-collapse">
     <ul class="nav navbar-nav">
-      <li class="selected"><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Unitarianism</a></li>
-      <li><a href="resources.html">Resouces</a></li>
+      <li class="selected"><a href="{{site.url}}/index.html">Home</a></li>
+      <li><a href="{{site.url}}/about.html">About Unitarianism</a></li>
+      <li><a href="{{site.url}}/resources.html">Resouces</a></li>
       <li class= "hidden-xs hidden-sm">
-        <a class="logo" rel="home" href="index.html"><img src="{{ site.baseurl }}/img/logo.png" width="200" alt="logo"></a>
+        <a class="logo" rel="home" href="{{site.url}}/index.html"><img src="{{ site.url }}/img/logo.png" width="200" alt="logo"></a>
       </li>
-      <li><a href="get-involved.html">Get Involved</a></li>
-      <li><a href="event.html">Events</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="{{site.url}}/get-involved.html">Get Involved</a></li>
+      <li><a href="{{site.url}}/event.html">Events</a></li>
+      <li><a href="{{site.url}}/contact.html">Contact</a></li>
     </ul>
   </div>
 </div>
 <div class="language-switcher">
-  <button onclick='window.location.href = "th"+window.location.pathname'>ภาษาไทย</button>
+  <script>console.log(window.location.pathname);
+    console.log("{{ site.url }}");
+  </script>
+  <button onclick='window.location.href = "{{ site.url }}"+"/th"+window.location.pathname'>ภาษาไทย</button>
 </div>

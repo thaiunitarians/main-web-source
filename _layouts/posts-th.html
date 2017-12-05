@@ -4,8 +4,8 @@ layout: default-th
 
 <div class="posts-head col-sm-12 col-xs-12 col-md-10 col-lg-10 col-lg-offset-1 col-md-offset-1">
   <h1>{{ page.title }}</h1>
-  <div class="posts-author">by <em>{{ page.author }}</em></div>
-  {{ page.date | date_to_long_string }}
+  <div class="posts-author">โดย <em>{{ page.author }}</em></div>
+  <div>วันที่ {{ page.date | date: "%d/%m/%Y" }}</div>
 </div>
 
 <div class="posts-body col-sm-12 col-xs-12 col-md-10 col-lg-10 col-lg-offset-1 col-md-offset-1">
