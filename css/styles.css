@@ -43,3 +43,7 @@ body{
 .posts-body{
 	margin-bottom: 40px;
 }
+
+.posts-body img{
+	max-width: 100%;
+}
