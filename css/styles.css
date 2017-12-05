@@ -35,3 +35,11 @@ body{
 .white p{
 	color: white;
 }
+
+.posts-head{
+	margin-bottom: 30px;
+}
+
+.posts-body{
+	margin-bottom: 40px;
+}
