@@ -1,0 +1,21 @@
+---
+layout: blogs-th
+title: 'บล็อค'
+permalink: 'blogs.html'
+lang: 'th'
+---
+
+{% for post in site.posts %}
+<div class="blog-event">
+  <!-- <div class="featured-img">
+    <img src="images/clients/1.jpg" width="150" alt="">
+  </div> -->
+  <div class="featured-blog">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.exceprt }}</p>
+      <a href="{{ post.url }}">
+        <button class="button-info">อ่านต่อ</button>
+      </a>
+  </div>
+</div>
+{% endfor %}
