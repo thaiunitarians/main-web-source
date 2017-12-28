@@ -65,6 +65,6 @@ We welcome everyone who shares our views on tolerance and religious freedom. The
 
 Unfortunately, unlike communities in other countries, Unitarians in Thailand is in a very early stage with only a small group of like-minded members. There is currently no regular service held and meeting are scheduled only at irregular intervals. But we genuinely believe that our freedom approach to religion will grow strong.
 
-Please join our [mailing list]() to stay in touch with our events and activities, follow us on [Facebook](https://www.facebook.com/thaiunitarians/) and [Twitter](). We would love to hear from everyone. Feel free to contact us even if you just want to ask a question.
+Please join our [mailing list]() to stay in touch with our events and activities, follow us on [Facebook](https://www.facebook.com/thaiunitarians/) and [Twitter](https://twitter.com/ThaiUnitarians). We would love to hear from everyone. Feel free to contact us even if you just want to ask a question.
 
 If you would like to become a part of our community, please visit [Get Involved](get-involved.html).
