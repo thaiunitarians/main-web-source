@@ -60,3 +60,26 @@ body{
 .footer-menus a{
 	color: white;
 }
+
+.header-text{
+	margin-top: 50px;
+	text-align: center;
+}
+
+.poster{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	max-width: 980px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.poster-image{
+	width: 100%;
+	max-width: 980px;
+}
+
+.saparator{
+	height: 50px;
+}
