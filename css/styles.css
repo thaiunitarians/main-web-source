@@ -36,6 +36,11 @@ body{
 	color: white;
 }
 
+.white a{
+	color: white;
+	text-decoration: underline;
+}
+
 .posts-head{
 	margin-bottom: 30px;
 }
@@ -46,4 +51,12 @@ body{
 
 .posts-body img{
 	max-width: 100%;
+}
+
+.social-share a{
+	color: white;
+}
+
+.footer-menus a{
+	color: white;
 }
